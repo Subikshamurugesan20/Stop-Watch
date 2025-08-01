@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="Time.css" />
+</head>
+
+<body>
+    
+    <div class="container">
+        <h2 style="text-align: center;">StopWatch</h2>
+        <div id="display">0</div>
+        <button id="start" onclick="start()">Start</button>
+        <button id="stop" onclick="stop()">Stop</button>
+        <button id="restart" onclick="restart()">Restart</button>
+    </div>
+
+    <script>
+       let count = 0;
+let interval = null;
+const display = document.getElementById('display');
+
+function start() {
+    if (interval) return;
+    interval = setInterval(() => {
+        count++;
+        display.innerHTML = count;
+    }, 1000); 
+}
+
+function stop() {
+    clearInterval(interval);
+    interval = null;
+}
+
+function restart() {
+    stop();
+    count = 0;
+    display.innerHTML = count;
+    start();
+}
+
+    </script>
+</body>
+</html>

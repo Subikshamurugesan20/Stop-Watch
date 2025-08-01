@@ -1,0 +1,30 @@
+body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+        }
+.container {
+        background:linear-gradient(90deg,rgb(219, 65, 219),rgb(101, 10, 101));
+        width: 400px;
+        height:300px;
+        margin-top:150px;
+        margin-left: 500px;
+        border: 2px solid black;
+        text-align: center;
+        padding-top: 50px;
+        }
+#display {
+        font-size: 40px;
+        margin-bottom: 30px;
+        }
+button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+            
+        }
+        button:hover{
+            background-color: rgb(75, 14, 85);
+            color: darkgrey;
+           
+
+        }
